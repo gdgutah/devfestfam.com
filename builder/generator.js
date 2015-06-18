@@ -12,300 +12,47 @@ var options = {
   facebook: facebook,
   twitter: twitter,
   baseUrl: baseUrl,
-  helpers: [
-    {
-      name: ' GDG Utah',
-      url: googlePlus
-    }
-  ],
+  helpers: [{
+    name: ' GDG Utah',
+    url: googlePlus
+  }],
   date: {
-    full: 'May 3, 2014',
-    day: '3',
-    month: 'May',
-    monthNum: '5',
-    year: '2014'
+    full: 'Sepember 19, 2015',
+    day: '19',
+    month: 'Sepember',
+    monthNum: '9',
+    year: '2015'
   },
-  activities: [
-    {
-      name: 'Registration',
-      startTime: '9:30 AM',
-      endTime: '10:00 AM'
+  activities: [{
+    name: 'Registration',
+    startTime: '9:30 AM',
+    endTime: '10:00 AM'
+  }, {
+    name: 'Keynote',
+    speaker: {
+      name: 'Aaron Frost',
+      url: 'https://plus.google.com/+AaronFrost/about',
+      company: {
+        name: 'GDG Utah',
+        url: 'http://gdgut.com'
+      }
     },
-    {
-      name: 'Keynote',
-      speaker: {
-        name: 'Aaron Frost',
-        url: 'https://plus.google.com/+AaronFrost/about',
-        company: {
-          name: 'GDG Utah',
-          url: 'http://gdgut.com'
-        }
-      },
-      startTime: '10:00 AM',
-      endTime: '10:45 AM'
+    startTime: '10:00 AM',
+    endTime: '10:45 AM'
+  }, {
+    name: 'Sphero Programming with Node.js',
+    speaker: {
+      name: 'Bob Dunn',
+      url: 'https://plus.google.com/+BobDunn0',
+      company: {
+        name: 'Pluralsight',
+        url: 'http://www.pluralsight.com'
+      }
     },
-    {
-      name: 'So You Think You Want to Write Code?',
-      speaker: {
-        name: 'William Munn',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Kids',
-      startTime: '11:00 AM',
-      endTime: '11:45 AM'
-    },
-    {
-      name: 'Learning Web Development',
-      speaker: {
-        name: 'John Woodruff',
-        url: 'https://plus.google.com/+JohnWoodruff/about',
-        company: {
-          name: 'Provo Web Academy',
-          url: 'http://provowebacademy.com'
-        }
-      },
-      track: 'Beginner',
-      startTime: '11:00 AM',
-      endTime: '11:45 AM'
-    },
-    {
-      name: 'Layers of Internet Safety',
-      speaker: {
-        name: 'James Eason',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Non Programmer',
-      startTime: '11:00 AM',
-      endTime: '11:45 AM'
-    },
-    {
-      name: 'Teaching Toddlers Programming',
-      speaker: {
-        name: 'Mike Clement',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Kids',
-      startTime: '12:00 PM',
-      endTime: '12:45 PM'
-    },
-    {
-      name: 'LEGO Robotics',
-      speaker: {
-        name: 'Peter Rich',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Kids',
-      startTime: '12:00 PM',
-      endTime: '12:45 PM'
-    },
-    {
-      name: 'How to Get Kids Interested in Programming',
-      speaker: {
-        name: 'Stacie Farmer',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Non Programmer',
-      startTime: '12:00 PM',
-      endTime: '12:45 PM'
-    },
-    {
-      name: 'Learning Programming with Kahn Academy for Kids',
-      speaker: {
-        name: 'Jarom McDonald',
-        url: '',
-        nophoto: true,
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Kids',
-      startTime: '12:00 PM',
-      endTime: '12:45 PM'
-    },
-    {
-      name: 'Lunch',
-      startTime: '1:00 PM',
-      endTime: '1:45 PM'
-    },
-    {
-      name: 'Arduino Autonomous Vehicle',
-      speaker: {
-        name: 'Steve Haladay',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Beginner',
-      startTime: '2:00 PM',
-      endTime: '2:45 PM'
-    },
-    {
-      name: 'Robotics with FIRST Lego League',
-      speaker: {
-        name: 'Cassandra Ivie',
-        url: '',
-        nophoto: true,
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Kids',
-      startTime: '2:00 PM',
-      endTime: '2:45 PM'
-    },
-    {
-      name: 'For True Beginners',
-      speaker: {
-        name: 'Timothy Schimandle',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Beginner',
-      startTime: '2:00 PM',
-      endTime: '2:45 PM'
-    },
-    {
-      name: "Blogging and Social Media",
-      speaker: {
-        name: 'Gabe Villamizar',
-        nophoto: true,
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Non Programmer',
-      startTime: '2:00 PM',
-      endTime: '2:45 PM'
-    },
-    {
-      name: 'How to "Hack" the Web',
-      speaker: {
-        name: 'Cahlan Sharp',
-        url: '',
-        company: {
-          name: 'DevMountain',
-          url: 'https://devmounta.in/'
-        }
-      },
-      track: 'Beginner',
-      startTime: '2:00 PM',
-      endTime: '2:45 PM'
-    },
-    {
-      name: 'Learning Programming with Code Academy',
-      speaker: {
-        name: 'Timothy Schimandle',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Beginner',
-      startTime: '3:00 PM',
-      endTime: '3:45 PM'
-    },
-    {
-      name: 'Websites for Smarties',
-      speaker: {
-        name: 'William Munn',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Beginner',
-      startTime: '3:00 PM',
-      endTime: '3:45 PM'
-    },
-    {
-      name: 'Google Blockly: Visually Programming',
-      speaker: {
-        name: 'Brian Ivie',
-        url: '',
-        nophoto: true,
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Kids',
-      startTime: '3:00 PM',
-      endTime: '3:45 PM'
-    },
-    {
-      name: 'Discussion Panel: Mothers in Tech',
-      speaker: {
-        name: 'Sariah Masterson',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'Non Programmer',
-      startTime: '3:00 PM',
-      endTime: '3:45 PM'
-    },
-    {
-      name: 'Angry Birds Hour of Code',
-      speaker: {
-        name: 'TBD',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'All Day',
-      startTime: '',
-      endTime: ''
-    },
-    {
-      name: 'Rockets',
-      speaker: {
-        name: 'TBD',
-        url: '',
-        company: {
-          name: '',
-          url: ''
-        }
-      },
-      track: 'All Day',
-      startTime: '',
-      endTime: ''
-    }
-  ],
+    track: 'Intermediate',
+    startTime: '9:30 AM',
+    endTime: '12:00 PM'
+  }],
   prizes: [
     'awesome thing 1',
     'really cool thing 2'
@@ -315,77 +62,65 @@ var options = {
     'Free Conference T-shirt',
     'As many Raspberry Pi as we can afford to give away'
   ],
-  sponsors: [
-    {
-      name: 'BlueHost',
-      url: 'http://www.bluehost.com',
-      image: 'resources/sponsor-logos/bluehostlogo.png',
-      level: 'premier'
+  sponsors: [{
+    name: 'BlueHost',
+    url: 'http://www.bluehost.com',
+    image: 'resources/sponsor-logos/bluehostlogo.png',
+    level: 'premier'
+  }, {
+    name: 'Google Fiber',
+    url: 'https://fiber.google.com/about/',
+    level: 'platinum',
+    image: 'resources/sponsor-logos/fiberlogo.png'
+  }, {
+    name: 'AtTask',
+    url: 'http://www.attask.com',
+    image: 'resources/sponsor-logos/attasklogo.png',
+    level: 'platinum'
+  }, {
+    name: 'DojoDevCamp',
+    url: 'http://dojodevcamp.com/',
+    level: 'platinum',
+    image: 'resources/sponsor-logos/dojologo.png'
+  }, {
+    name: 'Domo',
+    url: 'http://www.domo.com/',
+    level: 'platinum',
+    image: 'resources/sponsor-logos/domologo.png'
+  }, {
+    name: 'DevMountain',
+    url: 'http://devmounta.in/',
+    level: 'gold',
+    image: 'resources/sponsor-logos/devmtnlogo2.png'
+  }, {
+    name: 'ConsultNet',
+    url: 'http://consultnet.com/',
+    level: 'gold',
+    image: 'resources/sponsor-logos/consultnetlogo.png'
+  }, {
+    name: 'Plural Sight',
+    url: 'http://www.pluralsight.com/',
+    level: 'gold',
+    image: 'resources/sponsor-logos/pluralsightlogo.png'
+  }, {
+    name: 'Provo Web Academy',
+    url: 'http://provowebacademy.com/',
+    level: 'silver',
+    image: 'resources/sponsor-logos/pwalogo.png'
+  }],
+  hotels: [{
+    name: 'Hotel Name',
+    address: {
+      street: 'Street address',
+      city: 'City address',
+      state: 'Utah',
+      zip: 'Zip'
     },
-    {
-      name: 'Google Fiber',
-      url: 'https://fiber.google.com/about/',
-      level: 'platinum',
-      image: 'resources/sponsor-logos/fiberlogo.png'
-    },
-    {
-      name: 'AtTask',
-      url: 'http://www.attask.com',
-      image: 'resources/sponsor-logos/attasklogo.png',
-      level: 'platinum'
-    },
-    {
-      name: 'DojoDevCamp',
-      url: 'http://dojodevcamp.com/',
-      level: 'platinum',
-      image: 'resources/sponsor-logos/dojologo.png'
-    },
-    {
-      name: 'Domo',
-      url: 'http://www.domo.com/',
-      level: 'platinum',
-      image: 'resources/sponsor-logos/domologo.png'
-    },
-    {
-      name: 'DevMountain',
-      url: 'http://devmounta.in/',
-      level: 'gold',
-      image: 'resources/sponsor-logos/devmtnlogo2.png'
-    },
-    {
-      name: 'ConsultNet',
-      url: 'http://consultnet.com/',
-      level: 'gold',
-      image: 'resources/sponsor-logos/consultnetlogo.png'
-    },
-    {
-      name: 'Plural Sight',
-      url: 'http://www.pluralsight.com/',
-      level: 'gold',
-      image: 'resources/sponsor-logos/pluralsightlogo.png'
-    },
-    {
-      name: 'Provo Web Academy',
-      url: 'http://provowebacademy.com/',
-      level: 'silver',
-      image: 'resources/sponsor-logos/pwalogo.png'
-    }
-  ],
-  hotels: [
-    {
-      name: 'Hotel Name',
-      address: {
-        street: 'Street address',
-        city: 'City address',
-        state: 'Utah',
-        zip: 'Zip'
-      },
-      phoneNumber: '123-456-7890',
-      fax: '098-765-4321',
-      bookLink: 'http://www.google.com',
-      bookText: 'Book a room'
-    }
-  ],
+    phoneNumber: '123-456-7890',
+    fax: '098-765-4321',
+    bookLink: 'http://www.google.com',
+    bookText: 'Book a room'
+  }],
   location: {
     state: 'Utah',
     city: 'Orem',
@@ -398,7 +133,7 @@ var options = {
 
 options.tracks = {};
 
-_.each(options.activities, function (activity) {
+_.each(options.activities, function(activity) {
   if (activity.speaker) {
     var simpleSessionName = activity.name.replace(/ |\//g, '-').toLowerCase();
     var simpleName = activity.speaker.name.replace(/ |\//g, '-').toLowerCase();
@@ -419,7 +154,8 @@ _.each(options.activities, function (activity) {
       options.tracks['General Events'].track = [];
     }
     options.tracks['General Events'].track.push(activity);
-  } else {
+  }
+  else {
     if (!options.tracks[activity.track]) {
       options.tracks[activity.track] = {};
       options.tracks[activity.track].name = activity.track;
@@ -432,10 +168,11 @@ _.each(options.activities, function (activity) {
 
 var html = jade.renderFile('index.jade', options);
 
-fs.writeFile('../index.html', html, function (err) {
+fs.writeFile('../index.html', html, function(err) {
   if (err) {
     console.log(err);
-  } else {
+  }
+  else {
     console.log('The file was saved!');
   }
 });
